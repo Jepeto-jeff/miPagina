@@ -1,0 +1,310 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25m;}
+ul{ font-style: none;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: rgb(230, 111, 0);
+}
+
+button:hover{
+    background-color: rgb(255, 143, 63);
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.color-acento{ color:rgb(230, 111, 0); }
+
+header{
+    background-color: rgb(235, 235, 235);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color:rgb(230, 111, 0);
+    font-size: 2em;
+}
+
+header .container{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 2px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color:black;
+    font-size: 1.2em;
+}
+
+header a:hover{
+    color:rgb(230, 111, 0); 
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("87a2e4ca-574c-4c63-9914-a1449aab5564.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color:white
+}
+
+#hero button{
+    font-size: 1.75em;
+}
+
+#Esta-es-mi-pagina .img-contenedor{
+    text-align: center;
+    padding: 50px 12px;
+}
+
+#Esta-es-mi-pagina .texto{
+    padding: 150px 30px;
+    margin: auto;
+}
+
+#mis-paginas{
+    background-color: rgb(29, 29, 29);
+    color:white;
+    text-align: center;
+}
+
+#mis-paginas .container{
+    padding: 100px 0px;
+}
+
+#mis-paginas h2{
+    margin-top: 0;
+    font-size: 3.5em;
+}
+
+#mis-paginas p{
+    display: none;
+    text-align: center;
+}
+
+#mis-paginas .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 25px rgba(0,0,0,0.5);
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("cef3a9f6-cd52-4d35-9d5b-47ebb5f9098a.jpeg");
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("10d517aa-eaf3-4bf0-a423-36f368725d65.jpeg");
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("89f08491-458f-42e2-b8d6-703584d1ffce.jpeg");
+}
+
+#caracteristicas .container{
+    text-align: center;
+}
+
+#caracteristicas li{
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+#ver-ahora{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: rgb(29, 29, 29);
+    color: white;
+    height: 80vh;
+}
+
+#ver-ahora h2{
+    font-size: 6vw;
+}
+
+#ver-ahora button{
+    font-size: 1.75em;
+}
+
+footer{
+    background-color: rgb(230, 230, 230);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgba(100, 100, 100);
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 720px){
+
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #Esta-es-mi-pagina .contenedor{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-left: 200px;
+    }
+
+    #Esta-es-mi-pagina .texto{
+        width: 50%;
+        max-width: 500px;
+        text-align: initial;
+        padding: 100px 20px;
+    }
+
+
+    #Esta-es-mi-pagina .img-contenedor{
+        background-image: url("7e624b7b-7f6a-408c-846b-72c49da3c0e4.jpeg");
+        background-size: cover;
+        background-position: center center;
+        height: 400px;
+        width: 300px;
+        border-radius: 15px;
+    }
+
+    #mis-paginas .programas{
+        display: flex;
+        justify-content: center;
+    }
+
+    #mis-paginas p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #mis-paginas h3{
+        margin-top: 0;
+    }
+
+    #mis-paginas .carta{
+        padding: 15px;
+        box-shadow: 3px 3px 25px rgba(0,0,0,0.5);
+    }
+
+    #caracteristicas .img-container{
+        background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.249),
+        rgba(0, 0, 0, 0.249)
+        )
+        ,url("ebdc99e9-09e4-4a66-919a-171b2ac39a3f.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 500px;
+        height: 400px;
+        box-shadow: 3px 3px 25px rgba(0,0,0,0.5);
+        border-radius: 15px;
+        padding: 200px;
+        margin-left: 100px;
+        margin-top: 20px;
+        margin: 90px auto;
+    }
+
+    #caracteristicas .lista{
+        width: 330px;
+        margin-top: 180px;
+        margin-left: 70px;
+        font-size: 1.3em;
+        text-align: initial;
+    }
+
+    #caracteristicas .container{
+        display: flex;
+    }
+
+    footer .container{
+        justify-content: flex-end;
+    }
+}
